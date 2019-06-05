@@ -7,6 +7,110 @@
     <title>RWD class3</title>
 </head>
 <body>
+    <p>練習4</p>
+    <!--
+        table 結構
+            thead 最上面
+            tbody 內容本體
+            tfoot 最下面
+        框線屬性
+            rules="value"
+                value:
+                    none    No line
+                    groups  Lines between row groups and column groups
+                    rows    Lines between rows
+                    cols    Lines between columns
+                    all     Lines between rows and columns
+    -->
+    <table border="1" rules="groups" width="70%">
+        <caption>電子類股上市公司</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">
+                    &nbsp;
+                </th>
+                <th colspan="2">
+                    106年
+                </th>
+                <th colspan="2">
+                    107年
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    營收（百萬）
+                </th>
+                <th>
+                    純益（百萬）
+                </th>
+                <th>
+                    營收（百萬）
+                </th>
+                <th>
+                    純益（百萬）
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    幸福
+                </td>
+                <td>
+                    3953
+                </td>
+                <td>
+                    1245
+                </td>
+                <td>
+                    3684
+                </td>
+                <td>
+                    763
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    飛達
+                </td>
+                <td>
+                    5193
+                </td>
+                <td>
+                    1420
+                </td>
+                <td>
+                    4143
+                </td>
+                <td>
+                    932
+                </td>
+            </tr>                                      
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">附註：實際營收依財務公告為準</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>練習3</p>
+    <!--
+    表格的對齊屬性
+        垂直方向的對齊：
+            valign="top/middle/bottom"
+        水平方向對齊：
+            align="rigth/center/left"
+        
+            valign與align可以同時使用。
+        
+        合併除存格：
+            通常用於 td 中的參數，從指定欄位開始延伸。
+                colspan
+                    往右合併（def value 1）
+                rowspan
+                    往下合併（def value 1）
+            
+    -->
     <table border="1" width="70%">
         <tr>
             <th rowspan="2">
@@ -68,23 +172,7 @@
             </td>
         </tr>
     </table>
-    <!--
-        表格的對齊屬性
-            垂直方向的對齊：
-                valign="top/middle/bottom"
-            水平方向對齊：
-                align="rigth/center/left"
-            
-                valign與align可以同時使用。
-            
-            合併除存格：
-                通常用於 td 中的參數，從指定欄位開始延伸。
-                    colspan
-                        往右合併（def value 1）
-                    rowspan
-                        往下合併（def value 1）
-            
-    -->
+    <p>練習2</p>
     <table border="1" width="70%">
             <caption>Brompton</caption>
             <tr>
@@ -155,6 +243,7 @@
                             ↘
                                 It's <table>
     -->
+    <p>練習1</p>
     <table border="1" width="50%">
         <caption>Table</caption>
         <tr>
@@ -173,5 +262,6 @@
             <td>456789</td>
         </tr>
     </table>
+
 </body>
 </html>
