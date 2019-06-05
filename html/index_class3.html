@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RWD class3</title>
+</head>
+<body>
+    <table border="1" width="70%">
+        <tr>
+            <th rowspan="2">
+                
+            </th>
+            <th colspan="2">
+                106年
+            </th>
+            <th colspan="2">
+                107年
+            </th>
+        </tr>
+        <tr>
+            <th>
+                營收（百萬）
+            </th>
+            <th>
+                純益（百萬）
+            </th>
+            <th>
+                營收（百萬）
+            </th>
+            <th>
+                純益（百萬）
+            </th>
+        </tr>
+        <tr>
+            <td>
+                幸福
+            </td>
+            <td>
+                3953
+            </td>
+            <td>
+                1245
+            </td>
+            <td>
+                3684
+            </td>
+            <td>
+                763
+            </td>
+        </tr>
+        <tr>
+            <td>
+                飛達
+            </td>
+            <td>
+                5193
+            </td>
+            <td>
+                1420
+            </td>
+            <td>
+                4143
+            </td>
+            <td>
+                932
+            </td>
+        </tr>
+    </table>
+    <!--
+        表格的對齊屬性
+            垂直方向的對齊：
+                valign="top/middle/bottom"
+            水平方向對齊：
+                align="rigth/center/left"
+            
+                valign與align可以同時使用。
+            
+            合併除存格：
+                通常用於 td 中的參數，從指定欄位開始延伸。
+                    colspan
+                        往右合併（def value 1）
+                    rowspan
+                        往下合併（def value 1）
+            
+    -->
+    <table border="1" width="70%">
+            <caption>Brompton</caption>
+            <tr>
+                <th>Items</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="../img/brompton.jpg" height="100">
+                </th>
+                <td align="center" valign="middle">
+                    <a target="_blank" href="https://www.brompton.com/">
+                        Brompton
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    Module M6R black
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <img src="../img/brompton-CHPT3.jpg" height="100">
+                </th>
+                <td align="center" valign="middle">
+                    <a target="_blank" href="https://www.brompton.com/bikes/special-editions/chpt3">
+                        Brompton CHPT3
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    Molude S2X CHPT3
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <img src="../img/brompton-Barbour.jpg" height="100">
+                </th>
+                <td align="center" valign="middle">
+                    <a target="_blank" href="https://www.brompton.com/news/posts/2017/barbour-collab">
+                        Brompton Barbour
+                    </a>
+                </td>
+                <td align="center" valign="middle">
+                    Molude M6L Barbour
+                </td>
+                </tr>
+        </table>
+    <!--
+        Table
+            <caption> 顯示在表格外的文字
+            <table> 表格區塊標籤
+                table 屬性
+                    border 框線寬度
+                    width  表格總寬度
+                <tr> table row: 列內容
+                <th> table header: 行的開頭
+                <td> table define 行與列中的子項目
+            
+            example:        
+                <caption>
+            ┌────┬────┬────┐
+            │<th>│<th>│<th>│
+            ├────┼────┼────┤
+            │<td>│<td>│<td>│
+            ├────┼────┼────┤
+            │<td>│<td>│<td>│
+            └────┴────┴────┘
+                            ↘
+                                It's <table>
+    -->
+    <table border="1" width="50%">
+        <caption>Table</caption>
+        <tr>
+            <th>Index</th>
+            <th>Item_Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>Test_001</td>
+            <td>123456</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Test_002</td>
+            <td>456789</td>
+        </tr>
+    </table>
+</body>
+</html>

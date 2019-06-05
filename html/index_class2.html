@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+    Doctype 用於描述文件類型與版本 html
+    html 表示，目前最新版本（html5）。 
+-->
+<html>    <!--html tag: html 程式範圍-->
+    <head>        <!--網頁標頭： 描述網頁資訊-->
+        <meta charset="utf-8">
+        <!--
+            meta 提供網頁內容的資訊給瀏覽器或是搜尋引擎
+                charset 用於設定網頁編碼方式
+        -->
+        <title><!--網頁標題部份-->
+            RWD
+        </title>
+    </head>
+    <body bgcolor="#eeffbb"> <!--網頁本體部份-->
+        <!-- 字型設定 
+            <b> 粗體
+            <i> 斜體
+            <u> 底線
+        -->
+        <font face="微軟正黑體">
+            <h1><u>苦瓜的健康料理-苦瓜鑲肉</u></h1>
+            <p>苦瓜又稱為錦荔枝，因其「實大如鴿子，有皺紋，似荔枝」而得名。</p>
+            <ul type="disc" >
+                <li>材料
+                    <ol type="a">
+                        <li>苦瓜</li>
+                        <li>大白菜</li>
+                        <li>豬肉絞肉</li>
+                        <li>太白粉</li>
+                        <li>鹽</li>
+                        <li>植物油</li>
+                    </ol>
+                </li>
+                <li>做法
+                    <ol type="1">
+                        <li>苦瓜橫切數塊，去除苦瓜子與內膜，使其成空圈狀。</li>
+                        <li>用鹽醃漬去除苦味。</li>
+                        <li>將珠絞肉鑲入苦瓜，沾少許鈦白粉水，使其黏固。</li>
+                        <li>用油煎熟，加入大白菜與少許開水燜煮，數分鐘後完成</li>
+                    </ul>
+                </li>
+            </ul>
+        </font>
+        <!-- 
+            body 屬性：
+                bgcolor 網頁背景色
+                    色彩：
+                        16進位設定<全彩> ＃RRGGBB
+                            00:用色最少
+                            ff:用色最多
+                        RGB value<全彩>  rgb(R,G,B)
+                            R 0-255
+                            G 0-255
+                            B 0-255
+                        色彩名稱（少用）
+                background 網頁背景圖片
+        -->
+        <!--
+            ul: 用於項目符號定義域
+            li: 項目符號定義域裡的項目本體
+                ul 支援屬性：
+                type: 符號類型
+                    "disc"      實心圓
+                    "circle"    空心圓
+                    "square"    實心方塊
+            
+            ol: 用於項目序號定義域
+            li: 項目序號定義域裡的項目本體
+                ol 支援屬性：
+                type: 編號類型
+                    "1"
+                    "A"
+                    "a"
+                    "I" 大寫羅馬數字
+                    "i" 小寫羅馬數字
+                start: "1" 起始值設定為1開始
+                reversed 用於反向序號（不用帶任何參數）
+        -->
+        <!--
+            a: 超連結
+                a 支援屬性：
+                    href:   指定目的位址<可支援絕對位址/可支援相對位址>
+                    target: 開啟連結後，連結開啟方式。
+                        _self:  在原頁面開啟
+                        _blank: 在新視窗開啟
+                        _parent: 在同頁面的父框架開啟(目前趨勢偏向單頁網頁/多框架不是主流)
+        -->
+        <font size="4">
+            <ul type="circle" >
+                <li>Apple</li>
+                <li>Brompton</li>
+                <li>Cat</li>
+                <li>Dog</li>
+                <li>Emma</li>
+                <li>Fox</li>
+            </ul>
+            <ol type="I" start="10">
+                <li>
+                    <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAeFBMVEX6+vozMzP///8wMDAoKCguLi4rKysUFBQhISEkJCQZGRkbGxv4+PheXl4TExN8fHzv7+/X19empqbp6elZWVnOzs6goKC4uLje3t6Hh4c+Pj50dHQJCQmsrKyQkJDCwsJoaGhOTk4AAABERESRkZGIiIhQUFDGxsbYoJdDAAADoUlEQVR4nO3c2XaiQBAGYLq6gWYRQVyIuMSY6Pu/4aBGgchkoG44Tv3fTY6HG/Kfhl4pxwEAAAAAAAAAAAAAAAAAAAAAAAAAAPhvEY19B6+HKF7skdswFG/nSTJBbENQ/BlZV7mIbQha2UBVvBKxDVD66sq8Ibbe4lNwS03ZLWLri07mOzXlF4itJyrvbU1pjdR6opV/T00Fn4itpzR6pKbCdOy7eRU0NXVj26Gx9ZTXj6jW8dh38ypo+egPVLJAY+uJ1vrxYlsitb7S5J5aNEVqfdHi3o/6mFb1V03hr6F5G8yqBrjGpk0ywaRqCFp9hPb4lWEx/Hf07f47Lor09pNaf6BGVKx25WRSLhdxO5wqq2xWHpTRx/fPfYrkapQuj741nut6QRiU53qbqsrsS/mBp3U1U/BMFE5WCO6G4rckeAxtq74z8nbZ7YHNZ0ffNC4p5UZqhdycy7s/NKpNG1/tztns1IrzfjGcpwiOpv5TMtfkbBS4XVeq5mgxRZ0H3dn8RvvCc6P5zwe0Z26iB8GNzYKBuQWCV3tpGzJTS3aC1y1zbmqi+wR691ipuW4uObUs+XdEXW3Nk5wau7HJ7kWdfMNKLZqJTq25MzWAPohOzaHT83yzh/AsO7aU9YzqtezU6Bz9O6RnRviWKfPVFmbCYytZww879n2PjOZ/WU37lfR+tHnEYwDvXXpsrGfUk34chCxiY2DGJv2jDmKthrsn6bEp1tzKkx7bgTclzce+8XHRhDNuU1b4njxNeSMQ4QM35pxUbQTv9FVozxqBKPMlu7kx18TVRvQGDHPgVg3dZM/muRtXyoo+cE9b5vkP2R/FUMHbXa74kj8uZU6vLqLSERsc7ZidQsUosft+lHUeP+1HJ5Ni7H9gJLx18bsPqZN6mnH70oo7l/qUtmoIDCV4KaRZRGCocOybHw8V7E7BiB66cSdYKpG8fsRubsLra3HfbtKL0PA6Uyt5Mn9BW0Zu0s8GOryTRyhCw/kUJpDdH9w0q7T1gkf0isphvWki+3OO2nrI681HFZobym3/FSQr/YRbjTK/o5SA63aEaVDsuUZZ2IpImyhczycHN7HtSatFak1UuHW/YPzjtfgMkZOvyqguaqETPKFtlJbJpVCK9qydZtQoO5POjteyM9qLFIr/P6Fsqmywnu5/FDm61D+alWtdXUGdng5VE0vTzqpZP4ttAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvLo/9FcpazFKHEoAAAAASUVORK5CYII=">
+                    Apple
+                    </a>
+                </li>
+                <li>
+                    <a target="_parent" href="http://static1.squarespace.com/static/592da619cd0f68e4917718c4/59305235197aea365ceffe03/59c0849bf6576ec69e47a8c5/1531693637806/brompton-a-1.jpg?format=1500w">
+                        Brompton
+                    </a>
+                </li>
+                <li>
+                    <a target="_self" href="https://www.womansworld.com/posts/why-do-cats-meow-166842">
+                        Cat
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg" >
+                        Dog
+                    </a>
+                </li>
+            </ol>
+            <ul type="circle">
+                    <li>
+                        <a target="_blank" href="https://unsplash.com">
+                            unsplash
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://pixabay.com">
+                            pixabay
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:goodog008@gmail.com">
+                            歡迎聯繫
+                        </a>
+                    </li>
+                </ul>
+        </font>
+        <!-- 圖片文字超連結 -->
+        <a target="_blank" href="https://www.brompton.com/">
+            <img src="../img/brompton-logo.png" width="50%">
+        </a>
+        <br>
+        <a target="_blank" href="../img/brompton-nyc-2-150.jpg">
+            <font color="ff88aa" size="6" face="Arial">
+                <p >Brompton sample</p>
+            </font>
+        </a>
+        <br>
+        <img src="../img/jonny-kennaugh-697578-unsplash.jpg" width="50%"><br>
+        <img src="../img/neonbrand-1519239-unsplash.jpg" width="150" height="100">
+        <blockquote>Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Similique 
+            perferendis dolore, quod, dolor at 
+            aliquid suscipit aliquam modi nostrum 
+            accusamus vel? Cum magnam ipsum itaque ratione, 
+            dignissimos inventore temporibus odio.
+        </blockquote>
+        <!-- blockquote: 縮排設定 -->
+        <!-- 
+            縮排設定：
+                1. 直接用空白鍵（只能支援單一個，多個空白鍵將被合併）
+                2. &nbsp 此關鍵字對應到一個空白鍵
+        -->
+        <hr>
+        <!-- hr: 水平線 -->
+        <!-- 
+            水平線屬性：
+                size: 粗細（unit: px）
+                align: 對齊(right, left, center)
+                width: 長度(unit: px/%): '%' -> 對應到整個網頁寬度的百分比 
+                color: 可支援16進位
+        -->
+        <blockquote>Lorem ipsum dolor sit amet.</blockquote>
+        <hr size="6px" align="center" width="60%" color=#ffeeaa >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, perferendis.</p>
+        <article><!--以下內容為一種獨立內容或網頁本文-->
+            <hgroup><!--區塊標題的統整-->
+                <h1>唐詩</h1>
+                <h2>五言絕句</h2>
+            </hgroup>
+            <p>共20字</p>
+            <section><!--作為多個會話片段的其中一個-->
+                <font color="ff88aa" size="6" face="微軟正黑體">
+                    <p>送別</p>
+                </font>
+                <p style="font-family:Arial">AAA</p>
+                <font color="#aa88ff" size="4" face="微軟正黑體">
+                    <p>山中相送罷，</p>
+                    <p>日暮掩柴扉。</p>
+                    <p>春草明年綠，</p>
+                    <p>王孫歸不歸。</p> 
+                </font> 
+            </section>
+            <section><!--作為多個會話片段的其中一個-->
+                <h1>鹿柴</h1>
+                <p>XXXXXXXXXXXXXXXXXXXX</p>
+            </section>
+        </article>
+        <p>預設對齊部份</p>
+        <p align="center">至中對齊</p><!--align 設定對齊-->
+        <p align="right">靠右對齊</p>
+    </body>
+</html>

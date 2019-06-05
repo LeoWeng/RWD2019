@@ -1,0 +1,65 @@
+****************************************
+AM
+****************************************
+PHP- mysqul:
+
+	open browser
+
+	url:
+		localhost
+		localhost/phpmyadmin
+
+		login rwd
+		login root
+		password rwd_backend
+-------------------------------[check mysql and php exist]
+
+	use arpach:
+		cd /var/www/html ＝＝ url localhost
+
+-------------------------------[web server root path]
+
+copy files to vm: file zilla
+	set server ip address: localhost
+		usr: root
+		pwd: rwd_backend
+		port: 22
+
+	<windows請信任 file zilla>
+
+****************************************
+PM
+****************************************
+Simon 老師
+	phone		0983858183
+	email		simonlee0614@gmail.com
+	facebook	https://www.facebook.com/simonlee0614
+			name 電腦輕鬆學 輕鬆學電腦
+	line id		teacherlee
+	WeChat		simonlee0614
+	line @		@hio0708i
+	
+雲端空間
+	http://bit.ly/2QGdSiN
+	包含上課講義與資料
+	網頁前端需要成品 並上傳
+		1. 規劃架構
+		2. 方向：
+			由老師指定
+-------------------------------[web 前端開發工具]
+[Visual Studio Code]
+-預覽網頁功能
+-------------------------------[VS code]
+
+ctrl+shift+p
+	search configure display langurage
+		Snippets
+		open in browser
+
+-------------------------------[browser]
+google chrome
+microsoft edge
+fire fox
+opera
+
+
