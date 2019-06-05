@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>意見調查表</title>
+</head>
+<body>
+    <h1>FEEDBACK FROM OF MOBILE</h1>
+    <form>
+        <!--
+            設定表單中選取範圍內的所有元素為同一個集合（群組）的標籤：
+                fieldset
+            針對指定範圍的欄位加入說明內容的標籤：
+                legend
+        -->
+        <fieldset>
+            <legend>個人資料</legend>
+        <!--
+            網頁輸入用標籤：
+                input
+                
+                屬性： 
+                    type(輸入類型)：
+                        button
+                        checkbox
+                        color
+                        date 
+                        datetime-local 
+                        email 
+                        file
+                        hidden
+                        image
+                        month 
+                        number 
+                        password
+                        radio
+                        range 
+                        reset
+                        search
+                        submit
+                        tel
+                        text
+                        time 
+                        url
+                        week
+                    name:
+                        input 名稱
+                    value:
+                        顯示於web的內容
+                    checked:
+                        被設定的內容將被預設為選擇
+        -->
+        <p>姓&nbsp;&nbsp;&nbsp;名:
+            <input type="text" name="userName" size="40">
+        </p>
+        <p>E-Mail:
+            <input type="text" name="userMail" size="40" value="username@mailserver">
+        </p>
+        <p>年&nbsp;&nbsp;&nbsp;齡:
+            <input type="radio" name="userAge" value="age1">20↓
+            <input type="radio" name="userAge" value="age2" checked>20-29
+            <input type="radio" name="userAge" value="age3">30-39
+            <input type="radio" name="userAge" value="age4">40-49
+            <input type="radio" name="userAge" value="age5">50↑
+        </p>
+        </fieldset><br>
+        <fieldset>
+            <legend>Smartphone Question</legend>
+        <p>您使用過得手機廠牌為：
+            <input type="checkbox" name"userPhone[]" value="hTC" checked> hTC
+            <input type="checkbox" name"userPhone[]" value="Apple"> Apple
+            <input type="checkbox" name"userPhone[]" value="ASUS"> ASUS
+            <input type="checkbox" name"userPhone[]" value="SONY"> SONY
+        </p>
+        <!--
+            文字輸入區塊標籤：
+                textarea
+
+                屬性參數
+                    cols: 每一行支援的字元數
+                    rows: 顯示支援的最大行數
+        -->
+        <p>使用時常見問題：<br>
+            <textarea name="userTrouble" cols="45" rows="4">
+                手機電池續航力低
+            </textarea>
+        </p>
+        <!--
+            選單標籤： 
+                select
+                
+                屬性參數
+                        size: 顯示時最大支援行數
+                        multiple： 定義選單標籤為清單
+        -->
+        <p>電信服務商名稱:
+            <select name="userNumber[]">
+                <option value="中華電信">中華電信</option>
+                <option value="台灣大哥大" selected>台灣大哥大</option>
+                <option value="遠傳">遠傳</option>
+                <option value="亞太電信">亞太電信</option>
+            </select>
+        </p>
+        <p>電信服務商名稱:(可複選)
+            <select name="userNumber[]" size="2" multiple>
+                <option value="中華電信">中華電信</option>
+                <option value="台灣大哥大" selected>台灣大哥大</option>
+                <option value="遠傳">遠傳</option>
+                <option value="亞太電信">亞太電信</option>
+            </select>
+        </p>
+        </fieldset><br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重新輸入">
+    </form>
+</body>
+</html>
