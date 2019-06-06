@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--
+        css import 方法<只能定義於head>:
+    -->
+    <style>
+        @import url("../css/body.css");
+    </style>
+    <!--
+        css link 方法<只能定義於head>：
+    -->
+    <link rel="stylesheet" href="../css/mybootstrap.css" type="text/css">
+
+</head>
+<body>
+    <h1 class="heading" >Wellcom to WebUI</h1>
+    <h2>Hello</h2>
+    <!--
+        p class= heading 將會套用 body.css 的 p.heading{}
+    -->
+    <p class="heading">
+        春曉
+    </p>
+    <p class="content">
+        春眠不覺曉，處處聞啼鳥。夜來風雨聲，花落知多少？
+    </p>
+    <p class="heading">
+        竹里館
+    </p>
+    <p class="content">
+        獨坐幽篁裏，彈琴復長嘯。深林人不知，明月來相照。
+    </p>
+    <h1>意見調查表</h1>
+    <form action="">
+        <input type="submit" value="提交" id="button1">
+        <input type="reset" value="重新輸入" id="button2">
+    </form>
+</body>
+</html>

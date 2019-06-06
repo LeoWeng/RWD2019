@@ -1,0 +1,88 @@
+/*
+    css 選擇器
+        類型選擇器
+            以html標籤名稱作為套用對象
+            ex:
+                body{
+
+                }
+
+        後裔選擇器
+            ex:
+                h1 i{
+
+                }
+                以html標籤名稱h1下的i標籤作為套用對象（只有i被套用）
+        萬用選擇器
+            此選擇器會讓所有 html tag 都套用
+            ex:
+                *{
+                    padding:0;
+                    margin:0
+                }
+        類別選擇器
+            可自訂一個css選擇器"名稱"，
+            此"名稱的選擇器"所設定的參數，
+            套用於 html tag 內包含此"class屬性"指定名稱的目標。
+            ex:
+                css
+                -------------------------------
+                .hello{
+                    padding:0;
+                    margin:0
+                }
+                -------------------------------
+
+                html
+                -------------------------------
+                <p class="hello"> 你好 class </p>
+                -------------------------------
+        ID選擇器
+            僅有指定ID的html標籤才可以套用
+            ex:
+                css
+                --------------------
+                #string001{
+                    font-size:100px
+                }
+                --------------------
+
+                html
+                --------------------
+                <p id="string001">這裡會改變</p>
+*/
+
+body{
+    color: white;
+    background: rgb(149, 255, 241)
+}
+
+.heading{
+    font-family: 華康粗黑體;
+    font-size: 30px;
+    color: maroon
+}
+
+.content{
+    font-family: 標楷體;
+    font-size: 25px;
+    color: olive
+}
+
+/*
+    指定 "p 標籤" 且有使用 class＝heading 的目標將會套用此樣式  
+*/
+p.heading{
+    font-family: 微軟正黑體;
+    color: blue
+}
+
+#button1{
+    font-size: 30px;
+    color: red
+}
+
+#button2{
+    font-size: 30px;
+    color: green
+}
