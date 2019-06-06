@@ -31,7 +31,10 @@
         
         CSS 屬性內容可以寫在 Html 文件中的 <style> 標籤內，
             且 <style> 標籤但必須限定寫在 <head> 標籤內。
-            
+        
+        CSS 可以加入到html任意標籤，只要在 html tag 加入:
+            屬性：
+                style： 內容用string設定
     -->
     <h1>CSS sample</h1>
     <!--
@@ -70,7 +73,7 @@
         <p>日期與時間：
             <input type="date"><input type="time">
         </p>
-        <p>
+        <p style="color: aqua; background:blueviolet">
             月份<input type="month">週數<input type="week">
         </p>
         <input type="submit">
