@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Items</title>
+    <style type="text/css">
+        h1 {
+            color:red; 
+            font-family:"標楷體"
+        }
+        p {
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    <!--
+        install [HTML CSS Support]
+        CSS 可以提供 html 標籤美化的方法
+
+            基本規則：
+                選擇器{
+                    屬性1: value;       /* 這是 css 專用註解 */
+                    屬性2: 'string';
+                    ...;
+                    ...;
+                    ...
+                }
+        
+        CSS 屬性內容可以寫在 Html 文件中的 <style> 標籤內，
+            且 <style> 標籤但必須限定寫在 <head> 標籤內。
+            
+    -->
+    <h1>CSS sample</h1>
+    <!--
+        fast try example:
+            from>input[type='email']+input[type='submit']
+    -->
+    <!--
+        用input標籤做輸入部份類型有驗證功能
+            type:
+                color  -> 啟動顏色選擇器界面提供使用者選色 
+                range  -> 滑桿拉動帶入數值的方法
+                email  -> email格式驗證
+                url    -> url格式驗證
+                number -> 數值驗證「指定內容可包含:整數，浮點數，負數」
+                    屬性：
+                        min 可輸入的最小值
+                        max 可輸入的最大值
+                        step 在min與max範圍區間內每一階最小間距值
+                tel    -> 電話號碼驗證
+                    屬性：
+                        pattern 可以套用"正規表示式"進行驗證
+                        title 顯示文字
+                        placeholder 提示文字
+                date   -> 日期輸入
+                time   -> 時間輸入
+    -->
+    <form action="">
+        <p>E-mail check:<input type="email"></p>
+        <p>URL check:<input type="url"></p>
+        <p>Number check:<input type="number" min="-8.2" max="22" step="0.1"></p>
+        <p>滑桿輸入方法:<input type="range" min="5" max="10" step="1"></p>
+        <p>請選色:<input type="color"></p>
+        <p>手機號碼：
+            <input type="tel" pattern="\d{4}[-]\d{3}[-]\d{3}" title="請輸入正確格式" placeholder="ex: 0934-345-678">
+        </p>
+        <p>日期與時間：
+            <input type="date"><input type="time">
+        </p>
+        <p>
+            月份<input type="month">週數<input type="week">
+        </p>
+        <input type="submit">
+    </form>
+</body>
+</html>
