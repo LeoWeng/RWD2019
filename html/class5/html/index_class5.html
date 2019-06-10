@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html 常用於 css 之 tag 與 Class</title>
+    <style>
+        .note {color:blue}
+        /*
+            屬性選擇器：
+                [屬性＝value]
+                    將指定的值套用在指頂屬性上。
+                ＊
+                    將指定的範為有部份相同，將會完全套用。
+                
+                下方內容說明：
+                    選擇其class屬性的所有值中有包含"apple" 任意標籤，
+                    將顏色改為red。
+        */
+        [class*="apple"] {color:red}
+        /*
+            字型設定
+        */
+        p {
+            font-family:微軟正黑體, 標楷體;
+            font-style: italic
+        }
+    </style>
+</head>
+<body>
+    <!--
+        tag <div>:
+            將HTML文件中的設定區塊中，將區塊範圍內的所有tag設定成為一個群組。
+            這將使class更容易使用，指需要針對div設定即可。
+        tag <span>:
+            與div功能類似，但是"指定"的對象為"一行"。(內容不會自動換行)
+    -->
+    <div>
+        <h1>網站服務</h1>
+        <ul>
+            <li><a href="" herf="http://google.com">GOOGLE</a></li>
+            <li><a href="" herf="http://tw.msn.com">MSN</a></li>
+            <li><a href="" herf="http://tw.yahoo.com">YAHOO</a></li>
+        </ul>
+    </div>
+    註解1:<span class="note">「章台路」</span>意指歌妓聚居之所。<br>
+    註解2:<span class="note">「冶遊生春露」</span>意指春遊。<br>
+    <ul>
+        <li class="apple">蘋果牛奶</li>
+        <li class="apple-banana">香蕉蘋果牛奶</li>
+        <li class="grape apple banana">特調牛奶</li>
+        <li class="kiwifruit apple">特調果汁</li>
+    </ul>
+    <!--
+        透過class方法設定字型。
+        可同時設定多個字型，
+        以讀取網頁之瀏覽器優先批配到的那一個字型為主要顯示的字體。
+    -->
+    <h1 style="font-weight:bold">Hello World!</h1>
+    <!--normal 範圍[100,900]-->
+    <h1 style="font-weight:normal(900)">Hello World!</h1> 
+    <h1 style="font-weight:bolder">Hello World!</h1>
+
+    <p style="font-size:20px">how's your day?</p>
+    <p style="font-size:20pt">how's your day?</p>
+    <p style="font-size:1cm">how's your day?</p>
+    <p style="font-size:xx-small">how's your day?</p>
+    <p style="font-size:x-small">how's your day?</p>
+    <p style="font-size:small">how's your day?</p>
+    <p style="font-size:medium">how's your day?</p>
+    <p style="font-size:large">how's your day?</p>
+    <p style="font-size:x-large">how's your day?</p>
+    <p style="font-size:xx-large">how's your day?</p>
+
+    <h1>芙蓉樓送辛漸</h1>
+    <p>
+        寒雨連江夜入吳，平明送客楚山孤。<br>
+        洛陽親友如相問，一片冰心在玉壺。
+    </p>
+    <!--行高可套用百分比，百分比單位為目前行高值-->
+    <p style="line-height:normal">
+        寒雨連江夜入吳，平明送客楚山孤。<br>
+        洛陽親友如相問，一片冰心在玉壺。
+    </p>
+    <p style="line-height:2">
+        寒雨連江夜入吳，平明送客楚山孤。<br>
+        洛陽親友如相問，一片冰心在玉壺。
+    </p>
+    <!--縮排可套用百分比，百分比單位為目前區塊的寬度-->
+    <p style="text-indent:1cm">
+        寒雨連江夜入吳，平明送客楚山孤。<br>
+        洛陽親友如相問，一片冰心在玉壺。
+    </p>
+    <!--對齊-->
+    <p style="text-align:left">一片冰心在玉壺</p>
+    <p style="text-align:right">一片冰心在玉壺</p>
+    <p style="text-align:center">一片冰心在玉壺</p>
+    <p style="text-align:justify">一片冰心在玉壺</p>
+    <p style="text-align:start">一片冰心在玉壺</p>
+    <p style="text-align:end">一片冰心在玉壺</p>
+    <p style="text-align:start end">一片冰心在玉壺</p>
+    <!--字元間距離-->
+    <p>芙蓉樓送辛漸</p>
+    <p style="letter-spacing:normal">芙 蓉樓送辛    漸</p>
+    <p style="letter-spacing:3px">芙 蓉樓送辛   漸</p>
+    <p style="letter-spacing:0.25cm">芙 蓉樓送辛    漸</p>
+    <hr>
+    <p>芙蓉樓送辛漸</p>
+    <p style="word-spacing:normal">芙 蓉樓送辛  漸</p>
+    <p style="word-spacing:3px">芙 蓉樓送辛 漸</p>
+    <p style="word-spacing:0.25cm">芙 蓉樓送辛  漸</p>
+    <p style="word-spacing:0.25em">芙 蓉樓送辛  漸</p>
+    <hr>
+    <p>芙蓉樓送辛漸</p>
+    <p style="word-spacing:normal">how's your day?</p>
+    <p style="word-spacing:3px">how's your day?</p>
+    <p style="word-spacing:0.25cm">how's your day?</p>
+    <p style="word-spacing:0.25em">how's your day?</p>
+    <!--文字大小寫設定-->
+    <p style="text-transform:none">A bod workman always blames his tools.</p>
+    <p style="text-transform:capitalize">A bod workman always blames his tools.</p>
+    <p style="text-transform:uppercase">A bod workman always blames his tools.</p>
+    <p style="text-transform:lowercase">A bod workman always blames his tools.</p>
+</body>
+</html>
