@@ -26,85 +26,205 @@
             font-family:微軟正黑體, 標楷體;
             font-style: italic
         }
+        /*
+            清單風格設定
+
+            符號設定：
+                square
+                disc
+                circle
+                none
+            套用符號設定：
+                decimal (1,2,3,...)
+                decimal-leading-zero (01,02,03,...)
+                lower-roman (i,ii,iii,...)
+                upper-roman (I,II,III,...)
+                lower-alpha (a,b,c,...)
+                upper-alpha (A,B,C,...)
+            以圖片作為風格：
+                image 可用 jpg gif png(建議 gif png 可以用透明背景)bicycle.jpg
+        */
+        ul {
+            list-style-image: url(../img/fire.gif);
+            list-style-type:lower-greek;
+            list-style-position: outside;
+        }
+        ul.compact{
+            list-style-position: inside;
+        }
+        ul>li {
+            vertical-align: middle;
+        }
     </style>
 </head>
-<body>
+<body style="background-color: burlywood;">
     <!--
-        tag <div>:
-            將HTML文件中的設定區塊中，將區塊範圍內的所有tag設定成為一個群組。
-            這將使class更容易使用，指需要針對div設定即可。
-        tag <span>:
-            與div功能類似，但是"指定"的對象為"一行"。(內容不會自動換行)
+        設定小張背景圖片重複出現
     -->
-    <div>
-        <h1>網站服務</h1>
+    <div style="background-image: url(../img/bicycle.jpg);
+    background-repeat: repeat">
+    <div style="background-color:rgba(255,255,255,0.8)">
+        <h1 style="color: rgb(17, 0, 255); background-color:rgba(255,255,255,0.5)">
+            近試上張水部
+        </h1>
+        <!--
+            tag <div>:
+                將HTML文件中的設定區塊中，將區塊範圍內的所有tag設定成為一個群組。
+                這將使class更容易使用，指需要針對div設定即可。
+            tag <span>:
+                與div功能類似，但是"指定"的對象為"一行"。(內容不會自動換行)
+        -->
+        <div>
+            <h1>網站服務</h1>
+            <ul>
+                <li><a href="" herf="http://google.com">GOOGLE</a></li>
+                <li><a href="" herf="http://tw.msn.com">MSN</a></li>
+                <li><a href="" herf="http://tw.yahoo.com">YAHOO</a></li>
+            </ul>
+        </div>
+        註解1:<span class="note">「章台路」</span>意指歌妓聚居之所。<br>
+        註解2:<span class="note">「冶遊生春露」</span>意指春遊。<br>
         <ul>
-            <li><a href="" herf="http://google.com">GOOGLE</a></li>
-            <li><a href="" herf="http://tw.msn.com">MSN</a></li>
-            <li><a href="" herf="http://tw.yahoo.com">YAHOO</a></li>
+            <li class="apple">蘋果牛奶</li>
+            <li class="apple-banana">香蕉蘋果牛奶</li>
+            <li class="grape apple banana">特調牛奶</li>
+            <li class="kiwifruit apple">特調果汁</li>
         </ul>
+        <!--
+            透過class方法設定字型。
+            可同時設定多個字型，
+            以讀取網頁之瀏覽器優先批配到的那一個字型為主要顯示的字體。
+        -->
+        <h1 style="font-weight:bold">Hello World!</h1>
+        <!--normal 範圍[100,900]-->
+        <h1 style="font-weight:normal(900)">Hello World!</h1> 
+        <h1 style="font-weight:bolder">Hello World!</h1>
+
+        <p style="font-size:20px">how's your day?</p>
+        <p style="font-size:20pt">how's your day?</p>
+        <p style="font-size:1cm">how's your day?</p>
+        <p style="font-size:xx-small">how's your day?</p>
+        <p style="font-size:x-small">how's your day?</p>
+        <p style="font-size:small">how's your day?</p>
+        <p style="font-size:medium">how's your day?</p>
+        <p style="font-size:large">how's your day?</p>
+        <p style="font-size:x-large">how's your day?</p>
+        <p style="font-size:xx-large">how's your day?</p>
+
+        <h1>芙蓉樓送辛漸</h1>
+        <p>
+            寒雨連江夜入吳，平明送客楚山孤。<br>
+            洛陽親友如相問，一片冰心在玉壺。
+        </p>
+        <!--行高可套用百分比，百分比單位為目前行高值-->
+        <p style="line-height:normal">
+            寒雨連江夜入吳，平明送客楚山孤。<br>
+            洛陽親友如相問，一片冰心在玉壺。
+        </p>
+        <p style="line-height:2">
+            寒雨連江夜入吳，平明送客楚山孤。<br>
+            洛陽親友如相問，一片冰心在玉壺。
+        </p>
+        <!--縮排可套用百分比，百分比單位為目前區塊的寬度-->
+        <p style="text-indent:1cm">    <h1 style="color: rgb(17, 0, 255); background-color:rgba(255,255,255,0.5)">
+                近試上張水部
+            </h1>
+            <!--
+                tag <div>:
+                    將HTML文件中的設定區塊中，將區塊範圍內的所有tag設定成為一個群組。
+                    這將使class更容易使用，指需要針對div設定即可。
+                tag <span>:
+                    與div功能類似，但是"指定"的對象為"一行"。(內容不會自動換行)
+            -->
+            <div>
+                <h1>網站服務</h1>
+                <ul>
+                    <li><a href="" herf="http://google.com">GOOGLE</a></li>
+                    <li><a href="" herf="http://tw.msn.com">MSN</a></li>
+                    <li><a href="" herf="http://tw.yahoo.com">YAHOO</a></li>
+                </ul>
+            </div>
+            註解1:<span class="note">「章台路」</span>意指歌妓聚居之所。<br>
+            註解2:<span class="note">「冶遊生春露」</span>意指春遊。<br>
+            <ul>
+                <li class="apple">蘋果牛奶</li>
+                <li class="apple-banana">香蕉蘋果牛奶</li>
+                <li class="grape apple banana">特調牛奶</li>
+                <li class="kiwifruit apple">特調果汁</li>
+            </ul>
+            <!--
+                透過class方法設定字型。
+                可同時設定多個字型，
+                以讀取網頁之瀏覽器優先批配到的那一個字型為主要顯示的字體。
+            -->
+            <h1 style="font-weight:bold">Hello World!</h1>
+            <!--normal 範圍[100,900]-->
+            <h1 style="font-weight:normal(900)">Hello World!</h1> 
+            <h1 style="font-weight:bolder">Hello World!</h1>
+    
+            <p style="font-size:20px">how's your day?</p>
+            <p style="font-size:20pt">how's your day?</p>
+            <p style="font-size:1cm">how's your day?</p>
+            <p style="font-size:xx-small">how's your day?</p>
+            <p style="font-size:x-small">how's your day?</p>
+            <p style="font-size:small">how's your day?</p>
+            <p style="font-size:medium">how's your day?</p>
+            <p style="font-size:large">how's your day?</p>
+            <p style="font-size:x-large">how's your day?</p>
+            <p style="font-size:xx-large">how's your day?</p>
+    
+            <h1>芙蓉樓送辛漸</h1>
+            <p>
+                寒雨連江夜入吳，平明送客楚山孤。<br>
+                洛陽親友如相問，一片冰心在玉壺。
+            </p>
+            <!--行高可套用百分比，百分比單位為目前行高值-->
+            <p style="line-height:normal">
+                寒雨連江夜入吳，平明送客楚山孤。<br>
+                洛陽親友如相問，一片冰心在玉壺。
+            </p>
+            <p style="line-height:2">
+                寒雨連江夜入吳，平明送客楚山孤。<br>
+                洛陽親友如相問，一片冰心在玉壺。
+            </p>
+            <!--縮排可套用百分比，百分比單位為目前區塊的寬度-->
+            <p style="text-indent:1cm">
+                寒雨連江夜入吳，平明送客楚山孤。<br>
+                洛陽親友如相問，一片冰心在玉壺。
+            </p>
+            <!--對齊-->
+            <p style="text-align:left">一片冰心在玉壺</p>
+            <p style="text-align:right">一片冰心在玉壺</p>
+            <p style="text-align:center">一片冰心在玉壺</p>
+            <p style="text-align:justify">一片冰心在玉壺</p>
+            <p style="text-align:start">一片冰心在玉壺</p>
+            <p style="text-align:end">一片冰心在玉壺</p>
+            <p style="text-align:start end">一片冰心在玉壺</p>
+            <!--字元間距離-->
+            <p>芙蓉樓送辛漸</p>
+            <p style="letter-spacing:normal">芙 蓉樓送辛    漸</p>
+            <p style="letter-spacing:3px">芙 蓉樓送辛   漸</p>
+            <p style="letter-spacing:0.25cm">芙 蓉樓送辛    漸</p>
+        </div>
+        </div>
+            寒雨連江夜入吳，平明送客楚山孤。<br>
+            洛陽親友如相問，一片冰心在玉壺。
+        </p>
+        <!--對齊-->
+        <p style="text-align:left">一片冰心在玉壺</p>
+        <p style="text-align:right">一片冰心在玉壺</p>
+        <p style="text-align:center">一片冰心在玉壺</p>
+        <p style="text-align:justify">一片冰心在玉壺</p>
+        <p style="text-align:start">一片冰心在玉壺</p>
+        <p style="text-align:end">一片冰心在玉壺</p>
+        <p style="text-align:start end">一片冰心在玉壺</p>
+        <!--字元間距離-->
+        <p>芙蓉樓送辛漸</p>
+        <p style="letter-spacing:normal">芙 蓉樓送辛    漸</p>
+        <p style="letter-spacing:3px">芙 蓉樓送辛   漸</p>
+        <p style="letter-spacing:0.25cm">芙 蓉樓送辛    漸</p>
     </div>
-    註解1:<span class="note">「章台路」</span>意指歌妓聚居之所。<br>
-    註解2:<span class="note">「冶遊生春露」</span>意指春遊。<br>
-    <ul>
-        <li class="apple">蘋果牛奶</li>
-        <li class="apple-banana">香蕉蘋果牛奶</li>
-        <li class="grape apple banana">特調牛奶</li>
-        <li class="kiwifruit apple">特調果汁</li>
-    </ul>
-    <!--
-        透過class方法設定字型。
-        可同時設定多個字型，
-        以讀取網頁之瀏覽器優先批配到的那一個字型為主要顯示的字體。
-    -->
-    <h1 style="font-weight:bold">Hello World!</h1>
-    <!--normal 範圍[100,900]-->
-    <h1 style="font-weight:normal(900)">Hello World!</h1> 
-    <h1 style="font-weight:bolder">Hello World!</h1>
-
-    <p style="font-size:20px">how's your day?</p>
-    <p style="font-size:20pt">how's your day?</p>
-    <p style="font-size:1cm">how's your day?</p>
-    <p style="font-size:xx-small">how's your day?</p>
-    <p style="font-size:x-small">how's your day?</p>
-    <p style="font-size:small">how's your day?</p>
-    <p style="font-size:medium">how's your day?</p>
-    <p style="font-size:large">how's your day?</p>
-    <p style="font-size:x-large">how's your day?</p>
-    <p style="font-size:xx-large">how's your day?</p>
-
-    <h1>芙蓉樓送辛漸</h1>
-    <p>
-        寒雨連江夜入吳，平明送客楚山孤。<br>
-        洛陽親友如相問，一片冰心在玉壺。
-    </p>
-    <!--行高可套用百分比，百分比單位為目前行高值-->
-    <p style="line-height:normal">
-        寒雨連江夜入吳，平明送客楚山孤。<br>
-        洛陽親友如相問，一片冰心在玉壺。
-    </p>
-    <p style="line-height:2">
-        寒雨連江夜入吳，平明送客楚山孤。<br>
-        洛陽親友如相問，一片冰心在玉壺。
-    </p>
-    <!--縮排可套用百分比，百分比單位為目前區塊的寬度-->
-    <p style="text-indent:1cm">
-        寒雨連江夜入吳，平明送客楚山孤。<br>
-        洛陽親友如相問，一片冰心在玉壺。
-    </p>
-    <!--對齊-->
-    <p style="text-align:left">一片冰心在玉壺</p>
-    <p style="text-align:right">一片冰心在玉壺</p>
-    <p style="text-align:center">一片冰心在玉壺</p>
-    <p style="text-align:justify">一片冰心在玉壺</p>
-    <p style="text-align:start">一片冰心在玉壺</p>
-    <p style="text-align:end">一片冰心在玉壺</p>
-    <p style="text-align:start end">一片冰心在玉壺</p>
-    <!--字元間距離-->
-    <p>芙蓉樓送辛漸</p>
-    <p style="letter-spacing:normal">芙 蓉樓送辛    漸</p>
-    <p style="letter-spacing:3px">芙 蓉樓送辛   漸</p>
-    <p style="letter-spacing:0.25cm">芙 蓉樓送辛    漸</p>
+    </div>
     <hr>
     <p>芙蓉樓送辛漸</p>
     <p style="word-spacing:normal">芙 蓉樓送辛  漸</p>
@@ -117,10 +237,51 @@
     <p style="word-spacing:3px">how's your day?</p>
     <p style="word-spacing:0.25cm">how's your day?</p>
     <p style="word-spacing:0.25em">how's your day?</p>
+    <hr>
     <!--文字大小寫設定-->
     <p style="text-transform:none">A bod workman always blames his tools.</p>
     <p style="text-transform:capitalize">A bod workman always blames his tools.</p>
     <p style="text-transform:uppercase">A bod workman always blames his tools.</p>
-    <p style="text-transform:lowercase">A bod workman always blames his tools.</p>
+    <p style="text-transform:full-width">A bod workman always blames his tools.</p>
+    <hr>
+    <!--字型效果（底線,頂線，刪除線）-->
+    <p style="text-decoration:none">宮中詞</p>
+    <p style="text-decoration:underline">宮中詞</p>
+    <p style="text-decoration:overline">宮中詞</p>
+    <p style="text-decoration:line-through">宮中詞</p>
+    <!--文字陰影[水平位移 垂直位移 模糊話規模 顏色]-->
+    <h1 style="text-shadow:12px 8px 5px orange">
+        寂 寂 花 時 閉 院 門 ，	　美 人 相 並 立 瓊 軒 。            
+    </h1>
+    <h1 style="text-shadow:10px 10px 2px gray,
+    20px 20px 2px silver">
+        含 情 欲 說 宮 中 事 ，	　鸚 鵡 前 頭 不 敢 言 。
+    </h1>
+    <hr>
+    <!--清單風格-->
+    <ul>
+        <li>Djokovic</li>
+        <li>Rafael Nadal</li>
+        <li>Roger Federer</li>
+        <li>Domainic Thiem</li>
+        <li>Alexander Zverev</li>
+    </ul>
+    <ul class="compact">
+        <li>大鳥</li>
+        <li>笨鳥</li>
+    </ul>
+    <hr>
+    <h1 style="color:orange">Brompton</h1>
+    <h1 style="color:green">Good</h1>
+    <h1 style="color:red">Very well</h1>
+    <!--
+        rgba:   調整透平度 [0,1]
+    -->
+    <h1 style="color:rgba(255, 0, 0, 0.5)">Nickel Brompton</h1>
+    <hr>
+    <img src="../img/bromptonNormal.jpg" alt="" width="540">
+    <h1 style="color:navy">Brompton</h1>
+    <img src="../img/Brompton-Nickel.jpg" alt="" width="540" style="opacity:0.5">
+    <h1 style="color:navy; opacity:0.5">Nickel Brompton</h1>
 </body>
 </html>

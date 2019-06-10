@@ -1,0 +1,32 @@
+*{
+    font-family:標楷體;
+}
+
+p{
+    font-size: 22px;
+}
+
+span>p.first{
+    text-indent:1cm;
+}
+
+.TOP{
+    text-decoration:overline
+}
+
+.BOTTOM{
+    text-decoration:underline
+}
+
+h1{
+    text-align:center
+}
+
+span.CENTER{
+    text-align: justify
+}
+
+div{
+    width: 1100px;
+    margin: 0 auto;
+}
