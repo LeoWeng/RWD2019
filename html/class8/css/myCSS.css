@@ -1,0 +1,47 @@
+.BORDER_COLOR_1{
+    border-color: #aaaaee;
+    border-width: 3px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.BORDER_COLOR_2{
+    border-color: blue red green yellow;
+    border-width: 3px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.BORDER_COLOR_3{
+    border-color: blue yellow;
+    border-width: 3px;
+    border-style: solid;
+    padding: 5px;
+}
+
+/*
+    陰影-
+        box-shadow
+    value
+        [x y blur spread color inset]
+
+        x: 水平位移
+        y: 垂直位移
+        blur: blur-radius 模糊化半徑 <值越大，染色範圍越大>
+        color: 色彩
+        inset   <內陰影，適用按鈕動態>
+
+*/
+.SHADOW1{
+    box-shadow: 3px 3px 24px pink;
+    width: 460px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.SHADOW2{
+    box-shadow: 3px 3px 24px pink inset;
+    width: 460px;
+    line-height: 100px;
+    text-align: center;
+}

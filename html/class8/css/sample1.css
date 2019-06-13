@@ -1,0 +1,112 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+#container{
+    width:1000px;
+    margin: 0px auto;
+    background-color: #fff2dd;
+}
+
+#left_side{
+    width: 680px;
+    float: left;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+#right_side{
+    width: 300px;
+    float: right;
+}
+
+/*
+    clear:作為清除浮動區塊的設定
+    
+        value
+            - left  清除左側浮動區塊
+            - right 清除右側浮動區塊
+            - both  清除兩側浮動區塊
+            - none  不清除
+    
+    相對值-文字大小單位 em
+        1 em: 表示為本文大小的1倍
+*/
+.cle{
+    clear:both;
+    height: 0px;
+}
+
+.images{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#photos a{
+    margin: 5px 10px;
+}
+
+footer{
+    width: 1000px;
+    background-color: #89c997;
+    text-align: center;
+    line-height: 59px;
+}
+
+footer span{
+    margin-left: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    font-family: "微軟正黑體";
+    font-size: small;
+}
+
+p.text{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "微軟正黑體";
+    font-weight: normal;
+}
+
+#right_side>h3{
+    margin: 0px;
+    font-weight: normal;
+}
+
+h4{
+    color: #e52b2b;
+}
+
+li{
+    line-height: 2em;
+}
+
+s{
+    color: #f1d831;
+}
+
+div.main{
+    width: 100%;
+}
+
+div.img{
+    width: 200px;
+    margin-right: 10px;
+    float: left;
+}
+
+img{
+    width: 100%;
+}
+
+div.line{
+    width:100%;
+}

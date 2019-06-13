@@ -1,0 +1,79 @@
+#header{
+    width: 420px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    color: aqua;
+    font-weight: bolder;
+    background-color: rgb(2, 164, 170);
+}
+
+#body{
+    width: 420px;
+    height: 300px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    color: greenyellow;
+    font-weight: bolder;
+    background-color: rgb(1, 66, 6);
+}
+
+#footer{
+    width: 420px;
+    height: 300px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    color: rgb(163, 163, 255);
+    font-weight: bolder;
+    background-color: rgb(6, 0, 97);
+}
+
+/*
+    浮動區塊：
+        left    靠左
+        right   靠右
+        none    預設（不浮動）
+*/
+#float_Big{
+    width: 500px;
+    height: 190px;
+    font-size: 13px;
+    color:#333333;
+    line-height: 22px;
+}
+#float_floatpart{
+    width: 200px;
+    height: 120px;
+    background-color: rgb(97, 123, 238);
+    margin-right: 10px;
+    float: left;
+}
+
+/*
+    2個Div緊靠
+*/
+.floatBlock{
+    width: 250px;
+    height: 190px;
+    float:left;
+}
+#colorA{
+    background-color:blueviolet;
+}
+#colorB{
+    background-color:brown;
+}
+#closs_main{
+    width: 500px;
+    height: 190px;
+    background-color:blueviolet;
+}
+#closs_float{
+    width: 250px;
+    height: 190px;
+    background-color:brown;
+    float:left;
+}
