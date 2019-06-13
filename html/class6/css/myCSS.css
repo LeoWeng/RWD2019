@@ -1,0 +1,315 @@
+/*
+    背景圖片解析度：
+    4:3
+        800x600
+        1024x768
+        1280x1024
+        1600x1280
+    
+    16:9 / 16:10
+        1280x720
+        1440x900
+        1920x1080
+*/
+/*
+background-position:    設定背景圖片位置
+    value[ 水平  垂直 ]
+    value[ x% y%]
+    value[ 位置1 位置2]
+    可用單位：
+        1. 數值
+        2. 百分比
+        3. 位置參數 （right, left, center, top, bottom）
+*/
+pre.position{
+    background-image:url(../img/brompton.png);
+    background-repeat:no-repeat;
+    background-position:bottom center;
+}
+
+/*
+固定背景圖片位置
+    fixed: 不會隨背景移動
+    scroll: 會隨著背景移動
+*/
+pre.attachment{
+    background-image:url(../img/brompton.png);
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    background-attachment:fixed;
+}
+
+/*
+background-clip 背景色彩/圖片的顯示區域
+    設定值：
+        border-box 背景會描繪到框線
+        padding-box 背景會描繪到留白部份
+        content-box 背景會描繪到內容部份
+*/
+h1.background{
+    border:solid 30px rgba(255,153,255,0.5);
+    padding:50px;
+    background-image:url(../img/brompton.png);
+    background-clip: padding-box;
+}
+
+/*
+    background-size
+        調整背景圖片大小
+
+        設定值：
+            1. 數值
+            2. 百分比
+            3. auto:    自動套用
+            4. contain: size 符合 html 標籤對應的區塊
+            5. cover:   size 覆蓋整個 html 標籤對應的區塊
+            -------------------------------
+                1, 2, 兩種參數都需要設定長與寬
+*/
+div.background_size{
+    background-image: url(../img/brompton.png);
+    background-repeat: no-repeat;
+    border: solid 1px;
+    background-size: cover;
+}
+
+/*
+    背景漸層色
+
+    線性漸層設定：
+        linear-gradient:
+            example:
+                linear-gradient( 角度/方向, 色彩1, 色彩2+出現位置, ... ,  色彩n)
+
+                方向：
+                    to + <right, left, top, bottom>
+                角度：
+                    0 deg
+                    90 deg
+                出現位置：
+                    20% (於版面20％位置開始呈現)
+*/
+h1.gradient_case_1{
+    background: linear-gradient(to top, yellow, red)
+}
+
+h1.gradient_case_2{
+    background: linear-gradient(to left, yellow, red)
+}
+h1.gradient_case_3{
+    background: linear-gradient(to top right, yellow,white, blue)
+}
+
+h1.gradient_case_4{
+    background: linear-gradient(yellow, white 20%, #00ff00)
+}
+/*
+    背景型狀式放射漸層
+        radial-gradient:
+            可配參數 「形狀，大小，位置，色彩1, 色彩2, ... , 色彩N」
+            形狀部份：  circle, ellopse
+            
+                radial-gradient
+                radial-linear-gradient
+                radial-radial-gradient
+                
+*/
+h1.radial_case_1{
+    color: white;
+    background: radial-gradient(circle, white,blue);
+}
+h1.radial_case_2{
+    color: white;
+    background: radial-gradient(red,yellow,green);
+}
+
+h1.repeating_case_1{
+    background: repeating-linear-gradient(90deg, blue 0%, white 20%);
+    color: white;
+}
+h1.repeating_case_2{
+    background: repeating-radial-gradient(orange, yellow 20px, orange 40px);
+    color: white;
+}
+h1.repeating_case_3{
+    background: repeating-radial-gradient(circle, red, yellow, green 100%, yellow 150%, red 200%);
+    color: white;
+}
+
+/*
+    表格標題位置
+        caption-side
+            value:  top, bottom
+    表格框線模式
+        border-collapse
+            value:  separate,   (預設值) 分離
+                    collapse    重疊
+*/
+caption{
+    color: #0066cc;
+    font: 25px 標楷體;
+    caption-side: bottom;
+}
+
+th{
+    background-color: #99ccff;
+    padding: 5px;
+}
+
+td{
+    background-color: #ddeeff;
+    padding: 5px;
+    text-align: center;
+}
+
+table{
+    border: 2px solid red;
+    border-collapse: separate;
+}
+
+th,td {
+    border: 2px solid blue;
+}
+
+table.normal{
+    border: 2px solid red;
+    border-collapse: unset
+}
+
+/*
+    顯示/隱藏 空白除存格
+        empty-cells
+            value： show, hide
+*/
+th.normal,td.normal{
+    border: 2px solid red;
+    empty-cells: show;
+}
+
+table.borderSetting{
+    border: 2px solid red;
+    border-spacing: 10px;
+}
+
+/*
+    Box Model
+            ┌──────────────────────┐
+            │margin                │
+            │ ┌──────────────────┐ │
+            │ │ border           │ │
+            │ │ ┌──────────────┐ │ │
+            │ │ │ padding      │ │ │
+            │ │ │ ┌──────────┐ │ │ │
+            │ │ │ │ content  │ │ │ │
+            │ │ │ └──────────┘ │ │ │
+            │ │ └──────────────┘ │ │
+            │ └──────────────────┘ │            
+            └──────────────────────┘
+        
+            content: 內容本體 （其中, CSS設定的size 是設定此區塊）
+            padding: 留白，邊框與內容的間隔(padding size)
+            border:  邊框區塊（border size）
+            margin:  與其他元素之間的邊界距離（margin size）
+
+            整個html元素大小：
+                content+padding+border+margin
+            
+            不同區塊之間的 margin ：
+                主要依據，相鄰元件個別的margin值座比對，
+                取得最大的margin值，且區塊之間的間距即最大的margin值。
+                <並非不同元件margin距離疊加>
+*/
+#BoxText1{
+    border: 5px orange solid;
+    padding: 10px;
+    width: 500px;
+    margin: 15px 0px;
+}
+
+#BoxText2{
+    border: 2px gray dashed;
+    padding: 6px;
+    width: 500px;
+    background-color: #fafafa;
+    margin: 15px 0px;
+}
+
+/*
+    邊框樣式
+*/
+div.border_case_1{
+    border-style: none;
+}
+div.border_case_2{
+    border-style: dashed;
+}
+div.border_case_3{
+    border-style: dotted;
+}
+div.border_case_4{
+    border-style: solid ;
+}
+div.border_case_5{
+    border-style: double;
+}
+div.border_case_6{
+    border-style: groove;
+}
+div.border_case_7{
+    border-style: ridge;
+}
+div.border_case_8{
+    border-style: inset;
+}
+div.border_case_9{
+    border-style: outset;
+}
+
+/*
+    外框單邊配置
+*/
+#BorderBox{
+    border-top: 5px black solid;
+    border-right: 8px red double;
+    border-left: 7px yellow dotted;
+    border-bottom: 3px blue dashed;
+    padding: 30px;
+}
+
+/*
+    外框線寬度
+        border-width
+        
+        4個參數的配置定義：
+            由上開始，順時針順序定義不同邊的寬度設定。
+*/
+#Border4line_1{
+    border-style: solid;
+    border-width: 3px;
+}
+#Border4line_2{
+    border-style: solid;
+    border-width: 3px 6px 9px 12px;
+}
+#Border4line_3{
+    border-style: solid;
+    border-width: 3px 6px;
+}
+
+/*
+    框角風格設定
+        border-radius 直接調整全部的框角
+
+        border-top-right-radius
+        border-top-left-radius
+        border-cottom-right-radius
+        border-cottom-left-radius
+*/
+#Border3Style{
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    width: 360px;
+    height: 60px;
+    background-color: #eee;
+    
+}
