@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    font-family: '微軟正黑體';
+}
+
+h1,h2,h3,h4,h5,h6,p,em,li{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+#container{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+header{
+    background: url(../img/header.png) no-repeat;
+    height: 309px;
+    padding-top: 105px;
+}
+
+#banner{
+    width: 529px;
+    text-align: center;
+    color: white;
+}
+
+.banner_h{
+    background-color: #fbd500;
+    margin-bottom: 0.3em;
+}
+
+#content{
+    padding:0px 10px;
+}
+
+.starts{
+    display: block;
+    width: 70px;
+    height: 13px;
+    background-image: url(../img/stars.png);
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    background-position: -70px 0px;
+}
+
+.one{
+    background-position: -56px 0px;
+}
+
+.two{
+    background-position: -42px 0px;
+}
+
+.tree{
+    background-position: -28px 0px;
+}
+
+.four{
+    background-position: -14px 0px;
+}
+
+.five{
+    background-position: 0px 0px;
+}
+
+.cleaner{
+    height:0px;
+    clear: both;
+}
+
+#second{
+    margin-top:10px;
+    position: relative;
+}
+
+#image_title{
+    width:300px;
+    position: absolute;
+    left: 660px;
+    top:130px;
+    z-index:111;
+}
+
+#third, #fourth{
+    float: left;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+Wrinkled material
+#fifth{
+    float: right;
+    padding-top:250px;
+    padding-right: 20px;
+}
+
+.food{
+    float: left;
+    width: 25%;
+}
+
+header #banner h1{
+    font-size: 45px;
+}
+
+header #banner p{
+    margin-bottom: 8px;
+}
+
+#title{
+    height: 55px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: url(../img/line.png);
+    background-repeat: repeat-x;
+    background-position: 0% 50%;
+}
+
+#title h5,
+#title h3{
+    margin: 0px auto;
+    width: 150px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#title h5{
+    font-style: italic;
+}
+
+hr{
+    width: 75%;
+    float: left;
+    border-width: 4px;
+}
+
+/*
+    動態定位
+        position:
+            value-
+                absolute 絕對定位   <- fixed (不易使用)
+                    定位在付元素所在的相對位置
+                
+                relative 相對位置   <- static
+                    由瀏覽器調整要配置relative元素的定位
+
+                z-index            <- 類似圖層
+                    值越大越上層
+                    直越小越下層
+*/
+
