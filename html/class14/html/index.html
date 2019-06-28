@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="JavaScript" src="../js/base.js"></script>
+</head>
+<body>
+    <h2 align=center>
+        動態下拉選單：新增/刪除選單
+    </h2>
+    <hr>
+    <form action="">
+        <select name="" id="theList" size=5>
+            <option value="Tuesday">星期二</option>
+            <option value="Thursday">星期四</option>
+            <option value="Saturday">星期六</option>
+        </select>
+        <br>
+        <!--
+            theList 是 select object
+            theText 是 input object
+            theValue 是 input object
+        -->
+        <input type="button" value="刪除" onclick="deleteOption(theList)">
+        <input type="button" value="添加" onclick="addOption(theList, theText.value, theValue.value)">
+        <br><hr>
+        Text: <input type="text" id=theText>
+        Value: <input type="text" id=theValue>
+    </form>
+    <hr>
+    <form action="" name="myForm">
+        Grops:
+        <select size="5" onChange="renew(this.selectedIndex);">
+            <option value="A">G-A</option>
+            <option value="B">G-B</option>
+            <option value="C">G-C</option>
+            <option value="D">G-D</option>
+        </select>
+
+        Members:
+        <select name="member" size=5>
+            <option value="">請選擇</option>
+        </select>
+    </form>
+</body>
+</html>

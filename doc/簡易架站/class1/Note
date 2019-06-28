@@ -1,0 +1,70 @@
+html 範例：
+	google search- html5 template
+
+FTP server
+	ftp:10.253.119.216
+	user guest
+
+Appserver:
+	app server
+
+	php sql server:
+		user root
+		pwd 12345678
+
+		create database 
+			encode UTF8
+
+
+	web server:
+		unzip wordpress to AppServer/www forder
+		127.0.0.1/wordpress
+			L add new database name connect with mysql
+				127.0.0.1/phpMyAdmin
+					L Add new database for wordpress
+						set New database "wordpress"
+							utf8-general-ci
+
+			L set database "wordpress"
+				set user "root"
+				password "12345678"
+
+			L use the7_v4.12/the7_412theme/dt-the7 add to wordpress
+				unzip dt-the7 to ./www/wordpress/wp-content/themes
+			
+			L wordpress web side open： 網頁 side -> 外觀 -> main 選 the7 啟用
+
+	論壇 server:
+		Discuz unzip to www/discuz
+			add new discuz database
+		web select 127.0.0.1/discuz/uplad/install.php
+			setup database base on mysql-discuz
+			
+	easy shop:
+		unzip ecshop.v2.5.zip/upload/* to www/ecshop
+		 new database: ecshop on mysql
+		
+		url: 127.0.0.1/ecshop
+			to initial env
+
+		modify init file:
+			AppServ/php5/php.ini timezone addition on date.timezone "UTC"
+
+		restart apache server:
+			run [Apache Restart]
+
+	use proximet send mail to google mail server
+		enable php.ini -> php_openssl.dll
+				-> smtp_port = 465 {google mail server專用}
+
+		copy mail folder to www/Proximet/
+			modify contact.html <include mail.php setting>
+				form action = "mail/mail.php"
+				set name = 'name'
+					email = 'email'
+					message = 'msg'
+
+
+
+
+
